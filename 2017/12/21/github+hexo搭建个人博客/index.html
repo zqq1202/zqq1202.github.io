@@ -94,7 +94,7 @@
 <meta property="og:image" content="http://img.blog.csdn.net/20170115221748621?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzYwOTkyMzg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170115222219298?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzYwOTkyMzg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
 <meta property="og:image" content="http://img.blog.csdn.net/20170115222331001?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzYwOTkyMzg=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast">
-<meta property="og:updated_time" content="2017-12-21T15:26:11.998Z">
+<meta property="og:updated_time" content="2017-12-21T15:41:27.321Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="GitHub+HEXO搭建个人博客">
 <meta name="twitter:description" content="参考：  使用Hexo框架自由搭建博客 如何用github+hexo搭建个人博客 Hexo官方文档-部署   一、环境安装hexo之前需要先在windows环境下安装完Node.js和Git。   Windows 8.1 64bit Node.js 9.3.0 Git 2.15.1.2 GitHub帐号   安装 Node.js的安装Node.js安装文件（node-v9.3.0-x64.msi">
@@ -380,8 +380,33 @@
 <li>从GitHub上获取代码<br><code>git clone https://github.com/iTimeTraveler/hexo-theme-hiker.git themes/hiker</code></li>
 <li>启用<br>把Hexo主目录下的 _config.yml 文件中的字段 theme 修改为 hiker。</li>
 <li>配置文件修改完成以后，执行命令，完成自动部署:<br><code>npm install hexo-deployer-git --save</code></li>
-<li>重新发布页面就可以看到主题了<br><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code></li>
+<li>重新发布页面就可以看到主题了<br><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code><h2 id="六、主题设置"><a href="#六、主题设置" class="headerlink" title="六、主题设置"></a>六、主题设置</h2><blockquote>
+<p>参考：</p>
+<ol>
+<li><a href="http://blog.csdn.net/android_msk/article/details/75040787" target="_blank" rel="noopener">hexo入门学习（三）：主题设置</a></li>
+<li><a href="http://shaojunxiao.com/2016/06/04/Hexo-主题设置/" target="_blank" rel="noopener">Hexo 主题设置</a></li>
+<li><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">Next主题使用</a></li>
+<li><a href="http://www.jianshu.com/p/78c218f9d1e7" target="_blank" rel="noopener">Hexo-设置阅读全文</a></li>
 </ol>
+</blockquote>
+</li>
+</ol>
+<p>注意，修改了主题的配置文件_config.yml后，直接执行如下命令即可生效：<br><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code><br>已经设置的内容：</p>
+<blockquote>
+<p>hexo/theme/next/_config.yml</p>
+</blockquote>
+<p>使用Next主题的Gemini<br><code>theme: Gemini</code><br>设置“阅读全文”<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">auto_excerpt:</span><br><span class="line">enable: true</span><br><span class="line">length: 150</span><br></pre></td></tr></table></figure></p>
+<blockquote>
+<p>hexo/_config.yml</p>
+</blockquote>
+<p>设置站点信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: 创世BUG</span><br><span class="line">subtitle:</span><br><span class="line">description:</span><br><span class="line">author: qqz</span><br><span class="line">language: zh-Hans</span><br><span class="line">timezone:</span><br></pre></td></tr></table></figure></p>
+<p>设置部署信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repo: https://github.com/githubusername/githubusername.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure></p>
+<h2 id="七、写作"><a href="#七、写作" class="headerlink" title="七、写作"></a>七、写作</h2><blockquote>
+<ol>
+<li><a href="http://www.isetsuna.com/hexo/writing-image/" target="_blank" rel="noopener">Hexo博客系列（四）：写作和图床</a></li>
+<li><a href="https://hexo.io/zh-cn/docs/writing.html" target="_blank" rel="noopener">写作|Hexo</a></li>
+</ol>
+</blockquote>
 
       
     </div>
@@ -536,7 +561,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、环境"><span class="nav-number">1.</span> <span class="nav-text">一、环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、搭建博客"><span class="nav-number">2.</span> <span class="nav-text">二、搭建博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、新建并发布文章"><span class="nav-number">3.</span> <span class="nav-text">三、新建并发布文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、Win下的MarkDown编辑器"><span class="nav-number">4.</span> <span class="nav-text">四、Win下的MarkDown编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、主题替换"><span class="nav-number">5.</span> <span class="nav-text">五、主题替换</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#一、环境"><span class="nav-number">1.</span> <span class="nav-text">一、环境</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#安装"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二、搭建博客"><span class="nav-number">2.</span> <span class="nav-text">二、搭建博客</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#三、新建并发布文章"><span class="nav-number">3.</span> <span class="nav-text">三、新建并发布文章</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#四、Win下的MarkDown编辑器"><span class="nav-number">4.</span> <span class="nav-text">四、Win下的MarkDown编辑器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#五、主题替换"><span class="nav-number">5.</span> <span class="nav-text">五、主题替换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#六、主题设置"><span class="nav-number">6.</span> <span class="nav-text">六、主题设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#七、写作"><span class="nav-number">7.</span> <span class="nav-text">七、写作</span></a></li></ol></div>
             
 
           </div>
